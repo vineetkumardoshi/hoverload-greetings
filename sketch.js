@@ -46,7 +46,7 @@ function draw(){
 
   fill(255)
   //To
-  textSize(can_width/20);
+  textSize(can_height/10);
   textFont(to_FONT);
   textAlign(LEFT, BOTTOM);
   text(to, 20,0,can_width,can_height*0.2);
@@ -56,7 +56,7 @@ function draw(){
   textAlign(CENTER, CENTER);
   text(message, 0,can_height*0.2,can_width,can_height*0.6);
   //From
-  textSize(can_width/35);
+  textSize(can_height/12);
   textFont(from_FONT);
   textAlign(RIGHT, TOP);
   text("- "+from, 0,can_height*0.9-20,can_width-20,can_height);
