@@ -4,7 +4,7 @@ var toggle = 1;
 var col_counter = 2;
 var img;
 var to = "Hello Sir"
-var message = "Thank You!!";
+var message = "I'm an Indian, a proud Indian. @AirliftFilm is our attempt to bring to life India's most heroic mission -> http://www.youtube.com/v watch?v=lty1S8… @Beingind";
 var from = "Vineet Doshi"
 var to_FONT;
 var message_FONT;
@@ -51,10 +51,10 @@ function draw(){
   textAlign(LEFT, BOTTOM);
   text(to, 20,0,can_width,can_height*0.2);
   //Message
-  textSize(map(message.length, 1, 140, can_width/15, can_width/30));
+  textSize(map(message.length, 1, 140, (can_height+can_width)/25, (can_height+can_width)/40));
   textFont(message_FONT);
   textAlign(CENTER, CENTER);
-  text(message, 0,can_height*0.2,can_width,can_height*0.6);
+  text(message, 10,can_height*0.2,can_width-20,can_height*0.6);
   //From
   textSize(can_height/12);
   textFont(from_FONT);
