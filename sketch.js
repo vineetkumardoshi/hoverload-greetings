@@ -30,6 +30,12 @@ function mousePressed() {
   }
 }
 
+function touchMoved(){
+    noStroke();
+    fill(map(touchX, 0, can_width, 150, 200),0,map(touchY, 0, can_height, 150, 255));
+    ellipse(touchX, touchY, can_height/3, can_height/3);
+}
+
 function draw(){
   
   if(toggle%2 == 0){
