@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//fast.eager.io/NFSErjYdep.js"></script>
+    <meta charset="UTF-8">
+    <title>hoverload</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="custom.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!--<style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>-->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            
+            Hoverload
+            <div class="tag-line">
+              Greetings
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="footer">
+      <div class="footer-title">
+        <!--<img src="admin-img.png" class="admin-img" alt="admin-image">-->
+        #Administrator
+        <div class="footer-data">
+          <ul class="footer-links">
+            <li id="li-1">Create Greeting</li>
+            <li id="li-2">How To Use</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="create-greeting" style="display: none;">
+      <div class="sub-header" id="sub-header-1" style="display: none;">
+        Create Greeting <i class = "close-button" id="close-1">&#10006;</i> 
+      </div>
+      
+    </div>
+    
+    <div id="how-to-use" style="display: none;">
+      
+      <div class="sub-header" id="sub-header-2" style="display: none;">
+        How To Use <i class = "close-button" id="close-2">&#10006;</i> 
+      </div>
+      
+        
+      <div class="row" >
+        <div class="col-md-6 how-to-use-content" id="left-content" >
+          <ul id="how-to-use-ul">
+            <li>Click on canvas.</li>
+            <li>Hover cursor, over the canvas.</li>
+            <li>Canvas reveals a hidden greeting.</li>
+          </ul>  
+        </div>
+        <div class="col-md-6 how-to-use-content" id="right-content" >
+          <img src="demo.gif" class="img-responsive" id="demo-img" alt="demo gif">
+        </div>
+      </div>
+    </div>  
+    
+    
+  </body>
+</html>
