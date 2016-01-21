@@ -221,8 +221,8 @@ canvas{
 
 #To{
  /*margin-top: 10px;*/
- top: 20%;
- position: absolute;
+ top:22%;
+ position: relative;
  width: 98%;
  border-radius: 10px;
  padding: 1%;
@@ -231,20 +231,20 @@ canvas{
  font-family:"Poiret one", cursive;
 }
 #Message{
- top: 33%;
+ top: 24%;
  width: 98%;
  padding: 1%;
  font-size: 1.5em;
  font-weight: 900;
  border-radius: 10px;
  font-family: 'Poiret One', cursive;
- position: absolute;
+ position: relative;
 }
 #From{
- top:47%;  
- margin-top: 20px;
+ top: 25%;
+
  width: 98%;
- position: absolute;
+ position: relative;
  padding: 1%;
  font-size: 1.5em;
  font-weight: 900;
@@ -253,8 +253,8 @@ canvas{
 }
 
 #Create{
- position: absolute;
- top: 70%;
+ top: 30%;
+ position: relative;
  padding: 2%;
  /*width: 50%;*/
  font-size: 2em;
@@ -268,10 +268,10 @@ canvas{
 }
 
 form{
-  top:-4em;
+  top:0em;
   width: 100%;
   height: 97%;
-  position: relative;
+  position: absolute;
 
 }
 
