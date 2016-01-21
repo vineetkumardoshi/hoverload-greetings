@@ -24,6 +24,22 @@ $(document).ready(function(){
         $("#create-greeting").slideToggle();
         $("#sub-header-1").slideToggle();
       });
-      
-      
+    $("form").submit(function (e) {
+      e.preventDefault();
+      var string = $('#To').val() +"%23"+ $('#Message').val() +"%23"+ $('#From').val();
+      var URLm = window.location.href;
+      var URLm_CLEAN = URL.match(/.*#/);
+      if(URLm_CLEAN === null){
+        URLm_CLEAN = URL+"#";
+      }
+      URLm_CLEAN = URLm_CLEAN+window.btoa(string)
+      $("#URL-MESSAGE").val(URLm_CLEAN);
+      $("#URL").show("slow");
+      $("#greet-link").attr("href", URLm_CLEAN);
+      return false;
+    });    
+        
+    $("#close-url").click(function(){
+      $("#URL").hide("slow");
+    });  
   });
