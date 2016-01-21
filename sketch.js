@@ -5,10 +5,12 @@ var col_counter = 2;
 var img;
 var URL = window.location.href;
 var URL_CLEAN = URL.match(/#.*/);
+console.log(URL_CLEAN);
 if(URL_CLEAN === null){
   URL_CLEAN = "#SGVsbG8gVXNlciUyM1VSTCBsaW5rIGlzIGluY29ycmVjdCUyM0FkbWlu";
 }
-var URL_DECODE = window.atob(URL_CLEAN.substring(1));
+URL_CLEAN = URL_CLEAN.toString().substring(1);
+var URL_DECODE = window.atob(URL_CLEAN);
 var URL_SPLITLIST = URL_DECODE.split("%23");
 var to = URL_SPLITLIST[0];
 var message = URL_SPLITLIST[1];

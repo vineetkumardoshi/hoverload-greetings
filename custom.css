@@ -156,6 +156,7 @@ canvas{
   background-color: #fff;
   margin-top: 15px;
   border-radius: 10px;
+  z-index: 10;
 }
 
 .close-button{
@@ -257,7 +258,7 @@ canvas{
  position: relative;
  padding: 2%;
  /*width: 50%;*/
- font-size: 2em;
+ font-size: 1.5em;
  line-height: 0.5;
  background-color:#fff;
  font-weight: 900;
