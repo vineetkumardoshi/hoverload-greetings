@@ -5,29 +5,28 @@ body {
 
 .navbar-brand {
   font-family: 'Poiret One', cursive;
-  color: #fff !important;
+  color: #fff;
   font-weight: bold;
   font-size: 3em;
-  bottom:0.5em;
-  position: absolute;
-  width: 100% !important;
-  display: block !important;
-
+  position: relative;
 }
 
 nav {
-  background-color: #8E24AA !important;
-  border: 0em solid white !important;
+  
+  top:0;
+  left: 0;
+  right: 0;
+  padding: 0.2em 0.5em 0.1em 0.9375em;
+  position: fixed;
+  background-color: #8E24AA;
+  background-size: cover;
   box-shadow: 0em 0.3125em 1.875em #9C27B0;
-  position: relative;
-  padding-top: 2.5em;
-  padding-bottom: 4em;
 }
+
 .tag-line{
-  position: absolute;
   font-size:0.525em;
-  bottom:-0.5em;
-  left:5.8em;
+  left:4.8em;
+  position: relative;
 }
 
 canvas{
@@ -41,18 +40,17 @@ canvas{
 }
 
 .footer{
-  
-  font-size: 2em;
   position: fixed;
   bottom: 0;
-  padding: 1.9375em 0.9375em;
-  
+  left:0;
+  padding: 0.9375em;
   background-color: #8E24AA !important;
   box-shadow: 0em -0.3125em 1.875em #9C27B0;
   display: block;
   width: 100%;
   font-family: 'Poiret One', cursive;
   color: #fff !important;
+  font-size: 2em;
 }
 
 .footer-title{
@@ -63,13 +61,16 @@ canvas{
 
 .footer-links{
   position: absolute;
-  right: 0;
+  right: 1em;
   top:0;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display:inline;
+  
 }
+
+
 
 #li-1{
   float: left;
@@ -82,6 +83,7 @@ canvas{
   letter-spacing: 0.125em;
   font-weight: 900;
 }
+
 
 #li-2{
   float: left;
@@ -131,15 +133,12 @@ canvas{
   
   font-family: 'Poiret One', cursive;
   color: #9C27B0;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 900;
   padding: 20px;
   position: relative;
   background-color: #fff;
   margin-top: 15px;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%);
   border-radius: 10px;
 }
 
@@ -157,12 +156,12 @@ canvas{
 .how-to-use-content{
   font-family: 'Poiret One', cursive;
   color: #9C27B0;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 900;
   background: #fff;
   margin-top: 15px;
   border-radius: 10px;
-  
+  position: relative;
 }
 
 .row{
@@ -173,27 +172,102 @@ canvas{
 }
 
 #left-content{
-  width: 49.8%;
-  margin-right: 10px;
+
+  height: 46%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 1em;
 }
 
-#how-to-use-ul{
-  padding-bottom:40px;
-  padding-top: 40px;
+#how-to-use-ul li{
+  padding: 1em;
 }
 #right-content{
-  width: 49.8%;
-  float: right;
-  padding-top:20px;
-  padding-bottom:20px; 
+
+  height: 48%;
+  top: 55%;
+  left: 0em;
+  right:0em;
+  position: absolute;
+  bottom: 0;
+  /*top:50%;*/
+  /*transform:translate(0%,-50%);*/
+  padding: 1em;
 }
 
 #demo-img{
-  margin:auto; 
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
   position: absolute; 
-  top:0; 
-  right: 0; 
-  left: 0; 
-  bottom: 0;
-  padding: 0 30px;
+  width:90%;
+  height: 80%;
+  verticle-aling: middle;
+}
+
+#To{
+ /*margin-top: 10px;*/
+ position: relative;
+ width: 98%;
+ border-radius: 10px;
+ padding: 1%;
+ margin-top:20px;
+ font-size: 1.5em;
+ font-weight: 900;
+ font-family:"Poiret one", cursive;
+}
+#Message{
+ width: 98%;
+ height: 60%;
+ margin-top:20px;
+ padding: 1%;
+ font-size: 1.5em;
+ font-weight: 900;
+ border-radius: 10px;
+ font-family: 'Poiret One', cursive;
+ bottom: 50px;
+}
+#From{
+ margin-top: 20px;
+ width: 98%;
+ position: absolute;
+ padding: 1%;
+ font-size: 1.5em;
+ font-weight: 900;
+ border-radius: 10px;
+ bottom: 6em;
+ font-family: 'Poiret One', cursive;
+}
+
+#Create{
+ position: absolute;
+ margin-top: 30px;
+ padding: 2%;
+ width: 100%;
+ text-align: center;
+ font-size: 2em;
+ line-height: 0.5;
+ background-color:#fff;
+ font-weight: 900;
+ border-radius: 10px;
+ font-family: 'Poiret One', cursive;
+ cursor: pointer;
+ left: 0;
+ right: 0;
+ bottom: 1em;
+  
+}
+
+form{
+
+  width: 100%;
+  height: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }

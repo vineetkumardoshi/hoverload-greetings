@@ -3,9 +3,16 @@ var can_height = window.innerHeight / 1.5;
 var toggle = 1;
 var col_counter = 2;
 var img;
-var to = "Hello Sir"
-var message = "I'm an Indian, a proud Indian. @AirliftFilm is our attempt to bring to life India's most heroic mission -> http://www.youtube.com/v watch?v=lty1S8… @Beingind";
-var from = "Vineet Doshi"
+var URL = window.location.href;
+var URL_CLEAN = URL.match(/#.*/);
+if(URL_CLEAN === null){
+  URL_CLEAN = "#SGVsbG8gVXNlciUyM1VSTCBsaW5rIGlzIGluY29ycmVjdCUyM0FkbWlu";
+}
+var URL_DECODE = window.atob(URL_CLEAN.substring(1));
+var URL_SPLITLIST = URL_DECODE.split("%23");
+var to = URL_SPLITLIST[0];
+var message = URL_SPLITLIST[1];
+var from = URL_SPLITLIST[2];
 var to_FONT;
 var message_FONT;
 var from_FONT;
@@ -62,7 +69,7 @@ function draw(){
   textAlign(CENTER, CENTER);
   text(message, 10,can_height*0.2,can_width-20,can_height*0.6);
   //From
-  textSize(can_height/12);
+  textSize(can_height/10);
   textFont(from_FONT);
   textAlign(RIGHT, TOP);
   text("- "+from, 0,can_height*0.9-20,can_width-20,can_height);
