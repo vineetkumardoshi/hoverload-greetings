@@ -1,5 +1,6 @@
 body {
-  background-color: #CE93D8;
+  /*background-color: #CE93D8;*/
+  background-color: #fff;
 }
 
 
@@ -18,9 +19,11 @@ nav {
   right: 0;
   padding: 0.2em 0.5em 0.1em 0.9375em;
   position: fixed;
-  background-color: #8E24AA;
+  /*background-color: #8E24AA;*/
+  background-color:rgb(255,140,0);
   background-size: cover;
-  box-shadow: 0em 0.3125em 1.875em #9C27B0;
+  /*box-shadow: 0em 0.3125em 1.875em #9C27B0;*/
+  box-shadow: 0em 0.3125em 1.875em rgb(255,140,0);
 }
 
 .tag-line{
@@ -36,7 +39,8 @@ canvas{
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  box-shadow: 0em 0.3125em 1.875em #9C27B0;
+  /*box-shadow: 0em 0.3125em 1.875em #9C27B0;*/
+  box-shadow: 0em 0.3125em 1.875em rgb(0,0,128);
  
 }
 
@@ -45,8 +49,10 @@ canvas{
   bottom: 0;
   left:0;
   padding: 0.9375em;
-  background-color: #8E24AA !important;
-  box-shadow: 0em -0.3125em 1.875em #9C27B0;
+  /*background-color: #8E24AA !important;*/
+  background-color: rgb(19,136, 8);
+  /*box-shadow: 0em -0.3125em 1.875em #9C27B0;*/
+  box-shadow: 0em -0.3125em 1.875em rgb(19,136,8);
   display: block;
   width: 100%;
   font-family: 'Poiret One', cursive;
